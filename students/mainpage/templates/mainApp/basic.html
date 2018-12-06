@@ -1,0 +1,10 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block content %}
+
+    {% for x in values %}
+        {% if x == "063" %}
+            <h3>{{x}}</h3>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

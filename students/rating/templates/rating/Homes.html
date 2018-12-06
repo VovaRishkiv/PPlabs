@@ -1,0 +1,22 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block content %}
+    
+   <table style="width:100%">
+  <tr>
+    <th>Ім'я</th>
+    <th>Група</th> 
+    <th>Оцінка</th>
+  </tr>
+    {% for post in object_list %}
+    <tr>
+        <td>{{post.name}}</td>
+        <td>{{post.group}}</td> 
+        <td>{{post.mark}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+
+    
+{% endblock %}
+
